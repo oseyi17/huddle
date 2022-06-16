@@ -1,0 +1,452 @@
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-color:#effbff;
+    background-image: url(./bg-hero-desktop.svg);
+    padding: 1rem;
+    padding-top: 0;
+    width: 100%;
+}
+.head-1{
+    grid-column: 1/4;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 2rem;
+    padding-left: 5rem;
+    }
+
+.head-1 .h{
+    font-weight: 700;
+}
+
+.head-1 .p{
+    font-weight:400;
+}
+
+.nav{
+   margin-top: 3rem;
+    grid-column: 1/7;
+}
+
+.get-started-button{
+    width: 17rem;
+    padding:1.3rem;
+    border-radius: 50px;
+    background-color: #f552c7;
+    color: white;
+    border: none;
+}
+
+.get-started-button:hover{
+    cursor: pointer;
+    }
+.try-it-button{
+    float:right;
+    width: 17rem;
+    padding:1.3rem;
+    margin-right: 5rem;
+  
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 5px 5px 5px 5px #f2f3f4;
+    border: #f2f3f4;
+}
+
+.try-it-button{
+    cursor: pointer;
+}
+
+small{font-weight: lighter;}
+
+.head-2{
+    grid-column: 4/7;
+    padding: 2rem;
+}
+
+.head-2 img{width:550px; height:600px}
+
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 20rem;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 5rem 1rem 5rem 1rem;
+    box-shadow: 5px 5px 5px 5px #f2f3f4;
+    border: 2px #f2f3f4 solid;
+    border-radius: 20px;
+}
+
+
+
+.box-1{
+    grid-column: 1/4;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 1rem;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding: 2rem;
+}
+
+.box-2{
+    display: grid;
+    grid-column: 4/6;
+    grid-auto-rows:minmax(80px, auto);
+   /* background-image:url(./illustration-grow-together.svg);
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position-y: center;
+    background-position-x: 25px;*/
+
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding: 2rem;
+}
+
+.box-2 img{width:300px; height:300px}
+.box-2 img{width:200px; height:250px}
+.box-3 img{width:200px; height:250px}
+.box-6 img{width:200px; height:250px}
+
+
+.box-3{
+    display: grid;
+    grid-column: 1/3;
+    grid-auto-rows: minmax(100px, auto);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding: 2rem;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+
+.box-4{
+    grid-column: 3/6;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 2rem;
+}
+
+.box-5{
+    grid-column: 1/4;
+    grid-auto-rows: minmax(100px, auto);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding: 2rem;
+}
+
+ul{
+    margin-top: 5rem
+}
+
+.box-6{
+    grid-column: 4/6;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+   
+    padding: 2rem;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.ontop{
+    position:absolute;
+    background-color: white;
+    width: 40%;
+    height: 40%;
+   top: -15%;
+   left: 30%;
+   z-index:10;
+   text-align: center;
+   color: black;
+}
+
+
+.foot{
+    position: relative;    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color:black;
+    color: white;
+    padding: 2rem;
+}
+
+.foot-1{
+    grid-column: 1/3;
+    padding: 2rem}
+
+.foot-1 p img{
+    padding-right: 10px;
+}
+
+.foot-2{
+    grid-column: 3/4;
+    padding: 2rem}
+
+.foot-3{
+    grid-column: 4/5;
+    padding: 2rem}
+
+.foot-4{
+    grid-column: 5/7;
+    padding: 2rem}
+
+    .foot-4 a:focus{
+        border: 2px red solid;
+    }
+
+    .foot-4 .tw{
+        padding-left: 2rem ;
+        padding-right: 2rem;
+    }
+
+    /*Responsive at 600*/ 
+
+  @media screen and (max-width:600px) {
+    body{width: 600px;}
+    
+    .nav img{
+        width: 7rem;
+        height: 1.5rem;
+        margin-right:0 ;
+    }
+
+    .nav{
+        margin-top: 3rem;
+        margin-left: 1rem;
+     }
+    
+    .try-it-button{
+        float:right;
+        width: 7rem;
+        height: 2rem;
+        padding: 0%;
+    }
+
+    .get-started-button{
+        width: 17rem;}
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        width: 600px;
+        background-image: url(./bg-hero-mobile.svg);
+    }
+
+    .head-1{
+        width: 80%;
+        margin-right:3rem ;
+        text-align: center;
+        padding-left: 0%;
+        }
+    .head-1 p{
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    .head-1 .p{
+        font-weight: lighter;
+        font-size: 25px;
+        margin-right: 0%;
+        margin-left: 30px;
+    }
+
+    ul{
+        margin-top: 0rem
+    }
+
+    .head-2 img{width:500px; height:400px}
+    .box-2 img{width:400px; height:300px}
+    .box-3 img{width:400px; height:300px}
+    .box-6 img{width:400px; height:300px}
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        grid-row-gap:0;
+        text-align: center;
+    }
+
+    .ontop{
+        position:absolute;
+        background-color: white;
+        width: 80%;
+        height: 8rem;
+       top: -90px;
+       left: 5%;
+       z-index:10;
+       text-align: center;
+       color: black;
+    }
+
+    .ontop .get-started-button{
+        width: 10rem;
+        padding: 1rem;}
+
+    .foot{
+        position: relative;    
+        display: flex;
+        flex-direction: column;
+        background-color:black;
+        color: white;
+        padding: 2rem;
+        grid-row-gap:0; 
+    }
+
+    .foot-1{
+        padding: 2rem}
+    
+    .foot-2{
+        padding: 2rem}
+    
+    .foot-3{
+        display: flex;
+        padding: 2rem}
+    
+    .foot-4{
+        padding: 2rem}
+
+    .foot-4 .tw{
+        padding-left: 1px ;
+        padding-right: 1px;
+    }
+
+}
+
+
+/*REsponsive for 375px*/
+    @media screen and (max-width:375px) {
+        body{width: 375px;}
+        
+        .nav img{
+            width: 7rem;
+            height: 1.5rem;
+            margin-right:0 ;
+        }
+
+        .nav{
+            margin-top: 3rem;
+            margin-left: 1rem;
+         }
+        
+        .try-it-button{
+            float:right;
+            width: 7rem;
+            height: 2rem;
+            padding: 0%;
+        }
+
+        .get-started-button{
+            width: 17rem;}
+
+        .header{
+            display: flex;
+            flex-direction: column;
+            padding: 0%;
+            width: 400px;
+            background-image: url(./bg-hero-mobile.svg);
+        }
+
+        .head-1{
+            width: 80%;
+            margin-right:3rem ;
+            text-align: center;
+            padding-left: 0%;
+            }
+        .head-1 p{
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .head-1 .p{
+            font-weight: lighter;
+            font-size: 25px;
+            margin-right: 0%;
+            margin-left: 30px;
+        }
+
+        ul{
+            margin-top: 0rem
+        }
+
+        .head-2 img{width:300px; height:300px}
+        .box-2 img{width:200px; height:250px}
+        .box-3 img{width:200px; height:250px}
+        .box-6 img{width:200px; height:250px}
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            grid-row-gap:0;
+            text-align: center;
+        }
+
+        .ontop{
+            position:absolute;
+            background-color: white;
+            width: 80%;
+            height: 8rem;
+           top: -90px;
+           left: 5%;
+           z-index:10;
+           text-align: center;
+           color: black;
+        }
+
+        .ontop .get-started-button{
+            width: 10rem;
+            padding: 1rem;}
+
+        .foot{
+            position: relative;    
+            display: flex;
+            flex-direction: column;
+            background-color:black;
+            color: white;
+            padding: 2rem;
+            grid-row-gap:0; 
+        }
+
+        .foot-1{
+            padding: 2rem}
+        
+        .foot-2{
+            padding: 2rem}
+        
+        .foot-3{
+            display: flex;
+            padding: 2rem}
+        
+        .foot-4{
+            padding: 2rem}
+
+        .foot-4 .tw{
+            padding-left: 1px ;
+            padding-right: 1px;
+        }
+
+    }
+    
+  
+
+     
